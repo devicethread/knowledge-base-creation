@@ -6,7 +6,8 @@
     3- How to add a Z-Wave smart door lock to your SmartThings app
   </title>
   <link rel="icon" type="image/x-icon" href="https://help.dthreaddev.com/hubfs/Blue_DeviceThread02.png">
-
+  <link rel="stylesheet" href=https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap%22">
+  <link rel="stylesheet" type="text/css" href="../style_sheet.css">
 </head>
 
 <body>
@@ -15,89 +16,136 @@
   </center>
   <h2>This article will guide you on installing a new Z-Wave Yale lock step by step and connecting it to your
     SmartThings hub and app.</h2>
-  <h4>Before you start, make sure that the smart lock you are about to install is on the <a
-      href="../faq_content/lock_support_faq.html" target="_blank">list of currently
-      supported locks.</a> </h4>
+  <div class="pls-make">
+    <h4>Before you start, make sure that the smart lock you are about to install is on the <a
+        href="../faq_content/lock_support_faq.html" target="_blank">list of currently
+        supported locks.</a> </h4>
+  </div>
   <h3>Let's get started!</h3>
+
   <ul>
-    <li><strong>Install the lock on the door</strong> (latch & strike plate, keypad, interior mounting plate, attach the
-      cable assembly,
-      interior Escutcheon) following the instructions provided by the manufacturer.</li>
-    <li>When the lock is on the door, insert the Z-Wave Plus module (green plastic module) above the battery
-      compartment. See the green Z-Wave module in the photo above. Please take note that if you cannot find the module,
-      it sometimes gets stuck in the dark plastic packaging as it is very light.</li>
-    <li>Install the batteries & cover using a small Philips screwdriver.
+    <li>
+      <p><strong>Install the lock on the door</strong> (latch & strike plate, keypad, interior mounting plate, attach
+        the
+        cable assembly,
+        interior Escutcheon) following the instructions provided by the manufacturer.</p>
+    </li>
+    <li>
+      <p>When the lock is on the door, insert the Z-Wave Plus module (green plastic module) above the battery
+        compartment. See the green Z-Wave module in the photo above. Please take note that if you cannot find the
+        module,
+        it sometimes gets stuck in the dark plastic packaging as it is very light.</p>
+    </li>
+    <li>
+      <p>Install the batteries & cover using a small Philips screwdriver.</p>
       <h4>Example: Yale model YRD216-ZW<br>
         <img src="../images/add_z_wave_smart_door_images/yale_lock_img_1.png" height="257" width="257">
         <img src="../images/add_z_wave_smart_door_images/yale_lock_img_2.png" height="257" width="257">
+      </h4>
     </li>
-    </h4>
+    <li>
+      <p><strong>Set the 4-6 digits Master pin code.</strong> Of note, this is the first step that is required to
+        activate the lock. If
+        not done first, the lock cannot be configured or installed.</p>
     </li>
-    <li><strong>Set the 4-6 digits Master pin code.</strong> Of note, this is the first step that is required to
-      activate the lock. If
-      not done first, the lock cannot be configured or installed.</li>
-    <li><strong>Now you can connect it to the SmartThings app.</strong></li>
+    <li>
+      <p><strong>Now you can connect it to the SmartThings app.</strong></p>
+    </li>
   </ul>
+
   <h3>On the SmartThings app home page, start adding the device. </h3>
   <ul>
-    <li>Click on the <strong>+ icon</strong> on the top right.</li>
-    <li>The <strong>"Add"</strong> page opens - click <strong>"Add device"</strong><br>
-      <img src="../images/add_z_wave_smart_door_images/st_dashboard_1.png" height="438" width="256">
-      <img src="../images/add_z_wave_smart_door_images/st_dashboard_2.png" height="438" width="256">
+    <li>
+      <p>Click on the <strong>+ icon</strong> on the top right.</p>
     </li>
-    <li>On the <strong>"Add device page," scroll down to the bottom of the page to the search "by device type" or "By
-        brand" tabs.</strong></li>
-    <li><strong>Search for the smart lock or any other device by Brand.</strong><br>
-      <img src="../images/add_z_wave_smart_door_images/add_device_lock_1.png" height="438" width="256">
-      <img src="../images/add_z_wave_smart_door_images/add_device_lock_2.png" height="438" width="256">
+    <li>
+      <p>The <strong>"Add"</strong> page opens - click <strong>"Add device"</strong><br>
+        <img src="../images/add_z_wave_smart_door_images/st_dashboard_1.png" height="438" width="256">
+        <img src="../images/add_z_wave_smart_door_images/st_dashboard_2.png" height="438" width="256">
+      </p>
     </li>
-    <li>Click <strong>"View by model name".</strong></li>
-    <li><strong>Click on the specific Z-Wave lock model on the list.</strong><br>
-      <img src="../images/add_z_wave_smart_door_images/z_wave_model_1.png" height="438" width="256">
-      <img src="../images/add_z_wave_smart_door_images/z_wave_model_2.png" height="438" width="256">
+    <li>
+      <p>On the <strong>"Add device page," scroll down to the bottom of the page to the search "by device type" or "By
+          brand" tabs.</strong></p>
     </li>
-    <li><strong>Ok, get started with your Yale Z-Wave Lock!</strong></li>
-    <li>Click <strong>"Start".</strong><br>
-      <img src="../images/add_z_wave_smart_door_images/started.png" height="438" width="256">
+    <li>
+      <p><strong>Search for the smart lock or any other device by Brand.</strong><br>
+        <img src="../images/add_z_wave_smart_door_images/add_device_lock_1.png" height="438" width="256">
+        <img src="../images/add_z_wave_smart_door_images/add_device_lock_2.png" height="438" width="256">
+      </p>
     </li>
-    <li><strong>Select the closest hub that you wish to connect with.</strong> This is where having named any Hub with a
-      descriptive name of its location will help you find it easily.</li>
-    <li>Click <strong>"Next"</strong>.</li>
-    <li><strong>SmartThings now prepares to connect with the lock - Be patient!</strong>
-      <ul>
-        <li>
-          <strong> Then, follow carefully the 5 steps called out in the app.</strong>
-        </li>
-      </ul>
+    <li>
+      <p>Click <strong>"View by model name".</strong></p>
+    </li>
+    <li>
+      <p><strong>Click on the specific Z-Wave lock model on the list.</strong><br>
+        <img src="../images/add_z_wave_smart_door_images/z_wave_model_1.png" height="438" width="256">
+        <img src="../images/add_z_wave_smart_door_images/z_wave_model_2.png" height="438" width="256">
+      </p>
+    </li>
+    <li>
+      <p><strong>Ok, get started with your Yale Z-Wave Lock!</strong></p>
+    </li>
+    <li>
+      <p>Click <strong>"Start".</strong><br>
+        <img src="../images/add_z_wave_smart_door_images/started.png" height="438" width="256">
+      </p>
+    </li>
+    <li>
+      <p><strong>Select the closest hub that you wish to connect with.</strong> This is where having named any Hub with
+        a
+        descriptive name of its location will help you find it easily.</p>
+    </li>
+    <li>
+      <p>Click <strong>"Next"</strong>.</p>
+    </li>
+    <li>
+      <p><strong>SmartThings now prepares to connect with the lock - Be patient!</strong></p>
+      <div class="pls-make">
+        <ul>
+          <li>
+            <p> <strong> Then, follow carefully the 5 steps called out in the app.</strong></p>
+          </li>
+        </ul>
+      </div>
       <img src="../images/add_z_wave_smart_door_images/pick_hub_1.png" height="438" width="256">
       <img src="../images/add_z_wave_smart_door_images/pick_hub_2.png" height="438" width="256">
     </li>
-    <li><strong>Success!</strong> The lock has been added to SmartThings app with a default name but there is one more
-      important task to do.
-      <h4>
-        Critical Step!
-      </h4>
-      <ul>
-        <li>Make sure to rename the smart lock starting with the word "Lock" followed by the name of its "Location."
-          <strong> Ex.
-            "Lock-Room 101".</strong> This specific lock name will make it easier later to add this lock to a specific
-          zone in
-          Devicethread app.
-        </li>
-        <li><strong> If you skip this step, it will be very difficult setting up this lock in Devicethread.</strong>
-        </li>
-      </ul>
-
+    <li>
+      <p><strong>Success!</strong> The lock has been added to SmartThings app with a default name but there is one more
+        important task to do.</p>
+      <div class="pls-make">
+        <h4>
+          Critical Step!
+        </h4>
+        <ul>
+          <li>
+            <p>Make sure to rename the smart lock starting with the word "Lock" followed by the name of its "Location."
+              <strong> Ex. "Lock-Room 101".</strong> This specific lock name will make it easier later to add this lock
+              to a specific
+              zone in Devicethread app.
+            </p>
+          </li>
+          <li>
+            <p><strong> If you skip this step, it will be very difficult setting up this lock in Devicethread.</strong>
+            </p>
+          </li>
+        </ul>
+      </div>
     </li>
-    <li>SmartThings gives the installed smart lock a generic default name.</li>
-    <li>Rename it right away so you do not forget!
+    <li>
+      <p>SmartThings gives the installed smart lock a generic default name.</p>
+    </li>
+    <li>
+      <p>Rename it right away so you do not forget!</p>
       <br>
       <img src="../images/add_z_wave_smart_door_images/rename_lock_device_1.png" height="438" width="256">
       <img src="../images/add_z_wave_smart_door_images/rename_lock_device_2.png" height="438" width="256">
     </li>
-    <li><strong>Bravo! The SmartThings shows all the devices currently associated with your property and Samsung
-        account, which includes the one you just installed.</strong> You can make out where the devices are with the
-      descriptive names you assigned to each device.
+    <li>
+      <p><strong>Bravo! The SmartThings shows all the devices currently associated with your property and Samsung
+          account, which includes the one you just installed.</strong> You can make out where the devices are with the
+        descriptive names you assigned to each device.</p>
       <br>
       <img src="../images/add_z_wave_smart_door_images/hallway.png" height="438" width="256">
     </li>

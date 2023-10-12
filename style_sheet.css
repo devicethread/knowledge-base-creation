@@ -1,0 +1,66 @@
+h1 {
+    color: #2A3039;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    word-wrap: break-word
+}
+
+h2 {
+    color: #2A3039;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+    word-wrap: break-word
+}
+
+h3 {
+    color: #2A3039;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 20px;
+    word-wrap: break-word
+}
+
+p {
+    color: #2A3039;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    word-wrap: break-word
+}
+
+a {
+    color: #2A3039;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    word-wrap: break-word
+}
+
+strong {
+    color: #2A3039;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    word-wrap: break-word
+}
+
+
+.pls-make {
+    border-left-color: rgb(153, 214, 255);
+    border-left-style: solid;
+    border-left-width: 5px;
+    clear: both;
+    padding: 20px 30px 10px;
+    width: 90%;
+    background: rgba(243, 245, 255, 1);
+
+
+}

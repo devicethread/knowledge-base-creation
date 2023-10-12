@@ -6,6 +6,8 @@
         2- How to connect Cloudbeds & Devicethread
     </title>
     <link rel="icon" type="image/x-icon" href="https://help.dthreaddev.com/hubfs/Blue_DeviceThread02.png">
+    <link rel="stylesheet" href=https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap%22">
+    <link rel="stylesheet" type="text/css" href="../style_sheet.css">
 </head>
 
 <body>
@@ -14,32 +16,37 @@
     </center>
     <h2>This article covers all the tasks you should complete before connecting your Cloudbeds account with the
         Devicethread app.</h2>
-    <p><strong>Please make sure you have completed the following steps before connecting Cloudbeds and
-            Devicethread.</strong> </p>
-    <p>See how to perform all four key steps in the following article <a href="./before_connecting_cb_dt.html">
-            here.</a></p>
-    <p><strong>In summary:</strong> </p>
-    <ol>
-        <li>
-            <p>The primary user of your organization has downloaded the app from Devicethread's listing in the Cloudbed
-                marketplace.</p>
-        </li>
-        <li>
-            <p>You have set up one property: Name, Address, Users, etc. See <a href="">how to set up Devicethread</a>
-            </p>
-        </li>
-        <li>
-            <p>You have set up one or more SmartThings hubs for this property on your SmartThings app using your
-                SmartThings account (our demo has two accounts and multiple hubs). See how to set up SmartThings app and
-                hub(s).</p>
-        </li>
-        <li>
-            <p>You have completed setting up all of the smart locks on the property and connected them to the
-                SmartThings
-                hub. See how to set up smart locks.</p>
-        </li>
-    </ol>
-    <h3>If you are done, then you are now ready to connect your Cloudbeds account and Devicethread.</h3>
+    <div class="pls-make">
+        <p><strong>Please make sure you have completed the following steps before connecting Cloudbeds and
+                Devicethread.</strong> </p>
+        <p>See how to perform all four key steps in the following article <a href="./before_connecting_cb_dt.html">
+                here.</a></p>
+        <p><strong>In summary:</strong> </p>
+        <ol>
+            <li>
+                <p>The primary user of your organization has downloaded the app from Devicethread's listing in the
+                    Cloudbed
+                    marketplace.</p>
+            </li>
+            <li>
+                <p>You have set up one property: Name, Address, Users, etc. See <a href="">how to set up
+                        Devicethread</a>
+                </p>
+            </li>
+            <li>
+                <p>You have set up one or more SmartThings hubs for this property on your SmartThings app using your
+                    SmartThings account (our demo has two accounts and multiple hubs). See how to set up SmartThings app
+                    and
+                    hub(s).</p>
+            </li>
+            <li>
+                <p>You have completed setting up all of the smart locks on the property and connected them to the
+                    SmartThings
+                    hub. See how to set up smart locks.</p>
+            </li>
+        </ol>
+        <h3>If you are done, then you are now ready to connect your Cloudbeds account and Devicethread.</h3>
+    </div>
     <h2>1- Connecting Cloudbeds and Devicethread </h2>
     <ul>
         <li>
@@ -61,98 +68,156 @@
         <li>Verify your account by entering the one-time code sent to your email.<br>
             <img src="../images/cb_dt_integration/two_factor_authentication.png" height="438" width="256">
         </li>
-        <li>When your credentials have been validated, Devicethread goes to work instantly onboarding your property in
-            the app:
-            <ul>
-                <li>Devicethread creates a <strong>"Collection"</strong> for each of the existing rooms on the property.
-                </li>
-                <li>Key lock codes are created for each of the guests currently staying at the property.</li>
-            </ul>
+        <li>
+            <p>When your credentials have been validated, Devicethread goes to work instantly onboarding your property
+                in
+                the app:</p>
+            <div class="pls-make">
+                <ul>
+                    <li>
+                        <p>Devicethread creates a <strong>"Collection"</strong> for each of the existing rooms on the
+                            property.</p>
+                    </li>
+                    <li>
+                        <p>Key lock codes are created for each of the guests currently staying at the property.</p>
+                    </li>
+                </ul>
+            </div>
+
 
         </li>
-        <li>Reconfirm the Cloudbeds property you wish to connect with the Devicethread account.<br>
+        <li><p>Reconfirm the Cloudbeds property you wish to connect with the Devicethread account.</p><br>
             <img src="../images/cb_dt_integration/cred_validated.png" height="438" width="256">
             <img src="../images/cb_dt_integration/select_cb_property.png" height="438" width="256">
-            <p><strong> Congratulations, you have now connected Cloudbeds with Devicethread successfully!</strong> </p>
+
+
+            <div class="pls-make">
+                <p><strong> Congratulations, you have now connected Cloudbeds with Devicethread successfully!</strong>
+                </p>
+            </div>
 
 
         </li>
-        <li>Now it is time to set up Devicethread based on your preferences;<ul>
+        <li><p>Now it is time to set up Devicethread based on your preferences;</p>
+            <ul>
                 <li>
-                    <strong> Data Update Interval:</strong> select the interval at which Devicethread will sync and
-                    update the appropriate
-                    information in Cloudbeds. Select from 15 minutes to 60 minutes and click <strong> "Apply"</strong>.
-
+                    <p><strong>Data Update Interval:</strong> Select the interval at which Devicethread will sync and
+                        update the appropriate information in Cloudbeds. Select from 15 minutes to 60 minutes and click
+                        <strong>"Apply".</strong>
+                    </p>
                 </li>
             </ul>
+
             <img src="../images/cb_dt_integration/cb_integration_1.png" height="438" width="256">
             <img src="../images/cb_dt_integration/cb_integration_2.png" height="438" width="256">
             <img src="../images/cb_dt_integration/cb_integration_3.png" height="438" width="256">
         </li>
-        <li>Go to the <strong>"More"</strong> section and click <strong> "Collections"</strong> .</li>
-        <li>You will recognize that all of the rooms/accommodations using the abbreviation name in Cloudbeds have been
-            added as a single <strong> "Collection"</strong> .
-            <br>
-            <img src="../images/cb_dt_integration/more_1.png" height="438" width="256">
-            <img src="../images/cb_dt_integration/collection.png" height="438" width="256">
-            <p><strong> The last step of the setup is to define which specific "Zoned and locks" each guest staying in a
+        <ul>
+            <li>
+                <p>Go to the <strong>"More"</strong> section and click <strong>"Collections".</strong></p>
+            </li>
+            <li>
+                <p>You will recognize that all of the rooms/accommodations using the abbreviation name in Cloudbeds have
+                    been added as a single <strong>"Collection".</strong></p>
+            </li>
+        </ul>
+
+        <br>
+        <img src="../images/cb_dt_integration/more_1.png" height="438" width="256">
+        <img src="../images/cb_dt_integration/collection.png" height="438" width="256">
+        <div class="pls-make">
+            <p><strong> The last step of the setup is to define which specific "Zoned and locks" each guest staying
+                    in a
                     specific room/accommodation will have access to on the property.</strong> This is done in
                 Devicethread by
-                assigning all the appropriate <strong> "Zones"</strong> to each specific <strong> "Collection"</strong>.
+                assigning all the appropriate <strong> "Zones"</strong> to each specific <strong>
+                    "Collection"</strong>.
                 Remember, you have already set up
-                the Zones for the property before connecting the integration. if you have not done this yet, you can do
+                the Zones for the property before connecting the integration. if you have not done this yet, you can
+                do
                 it before continuing.
             </p>
 
             <p> <strong> For example,</strong> a guest staying in Room 101 should be able to open the Room 101 door
                 lock, the Lobby front
-                door lock, the backdoor lock, and the fitness room. In this example, a guest staying in Room 101 would
-                receive a 4 or 6-digit lock code that will work in any of those 4 door locks and have access to these
-                rooms during his stay at the property. After they check out, their codes will be expired and no longer
+                door lock, the backdoor lock, and the fitness room. In this example, a guest staying in Room 101
+                would
+                receive a 4 or 6-digit lock code that will work in any of those 4 door locks and have access to
+                these
+                rooms during his stay at the property. After they check out, their codes will be expired and no
+                longer
                 work. </p>
-        </li>
-        <li>The following task will have to be repeated for each "Collection". Do not worry; this needs to be done only
-            once when the integration is first connected. Also, you will be able to change these settings for each
-            "Collection" at any time in the future:
-            <ol>
-                <li>Select a specific<strong>"Collection"</strong>from the list.</li>
-                <li>Click <strong> "Add Zones"</strong>. </li>
-                <li><strong> Now you can see the list of "Zones".</strong> Remember, these are all of the "Zones" you
-                    have created
-                    previously. Each zone has one or more door locks (devices) that you associated with it.
+        </div>
 
+        </li>
+        <li>
+            <p>The following task will have to be repeated for each <strong>"Collection"</strong>. Do not worry; this
+                needs to be done
+                only
+                once when the integration is first connected. Also, you will be able to change these settings for each
+                <strong>"Collection"</strong> at any time in the future:
+            </p>
+            <ol>
+                <li>
+                    <p>Select a specific <strong>"Collection"</strong> from the list.</p>
+                </li>
+                <li>
+                    <p>Click <strong>"Add Zones".</strong></p>
+                </li>
+                <li>
+                    <p><strong>Now you can see the list of "Zones".</strong> Remember, these are all of the "Zones" you
+                        have created
+                        previously. Each zone has one or more door locks (devices) that you associated with it.</p>
                 </li>
             </ol>
+
             <img src="../images/cb_dt_integration/add_zones_and_devices.png" height="438" width="256">
             <img src="../images/cb_dt_integration/add_zones_collection_1.png" height="438" width="256">
         </li>
-        <li>Select all the property <strong>"Zones"</strong> by checking the boxes of the <strong>"Zones"</strong> a
-            guest staying in that
-            Room/Accommodation will have access to during their stay. <strong>Check all the appropriate boxes.</strong>
+        <li>
+            <p>Select all the property <strong>"Zones"</strong> by checking the boxes of the <strong>"Zones"</strong> a
+                guest staying in that Room/Accommodation will have access to during their stay. <strong>Check all the
+                    appropriate boxes.</strong></p>
         </li>
-        <li>Click <strong>"Assign Selected Items" </strong>.
-            <ul>
-                <li> <strong>Now repeat this step for every single "Collection" on the list. </strong></li>
-            </ul>
+        <li>
+            <p>Click <strong>"Assign Selected Items"</strong>.
+            <div class="pls-make">
+                <ul>
+                    <li> <strong>Now repeat this step for every single "Collection" on the list. </strong></li>
+                </ul>
+            </div>
+            </p>
         </li>
-        <li>After completing this, <strong>Voila! You are done with the initial setup and can now go back to the
-                Cloudbeds
-                interface. From now on, Devicethread will work in the background for you. </strong>
+        <li>
+            <p>After completing this, <strong>Voila! You are done with the initial setup and can now go back to the
+                    Cloudbeds
+                    interface. From now on, Devicethread will work in the background for you. </strong></p>
 
             <img src="../images/cb_dt_integration/add_zones_collection_1.png" height="438" width="256">
             <img src="../images/cb_dt_integration/add_zones_collection_2.png" height="438" width="256">
-            <h4>Cloudbeds is now connected and configured</h4>
-            <ul>
-                <li>From now on, any new <strong>"Confirmed"</strong> or <strong>"In House/Checked in
-                        reservations"</strong> in your Cloudbeds account
-                    will automatically, within 1 or 2 minutes, have a lock code appear on the top panel of the
-                    reservation details page. To view the lock code click <strong>"Show More". Of note, a red dot
-                        appears beside
-                        the "Show More" button when a lock code is present.</strong></li>
-                <li>If you set up a guest auto check-in email or text with room details, make sure to edit the template
-                    and an "Insert Merge Tag" called "lockcode". The guest property access lock code will be inserted
-                    automatically in the check-in communication.</li>
-            </ul>
+            <div class="pls-make">
+                <h4>Cloudbeds is now connected and configured</h4>
+                <ul>
+                    <li>
+                        <p>From now on, any new <strong>"Confirmed"</strong> or <strong>"In House/Checked in
+                                reservations"</strong> in your Cloudbeds account will automatically, within 1 or 2
+                            minutes, have a lock code
+                            appear on the top panel of the reservation details page. To view the lock code click
+                            <strong>"Show More". Of
+                                note, a red dot appears beside the "Show More" button when a lock code is
+                                present.</strong>
+                        </p>
+                    </li>
+                    <li>
+                        <p>If you set up a guest auto check-in email or text with room details, make sure to edit the
+                            template and add an
+                            "Insert Merge Tag" called "lockcode". The guest property access lock code will be inserted
+                            automatically in the
+                            check-in communication.</p>
+                    </li>
+                </ul>
+
+            </div><br>
             <img src="../images/cb_dt_integration/cb_reservation_1.png" height="342" width="668"><br>
             <img src="../images/cb_dt_integration/cb_reservation_2.png" height="154" width="564"><br>
             <img src="../images/cb_dt_integration/cb_reservation_3.png" height="213" width="568"><br>
@@ -161,27 +226,36 @@
     </ul>
     <h2>2- Disconnecting Cloudbeds account from Devicethread</h2>
     <ul>
-        <li>Go to the <strong>"More" </strong> section of the app on the bottom left of the navigation bar.</li>
-        <li>Click <strong>"Cloudbeds" under the Integrations and Cloud accounts.</strong></li>
-        <li><strong>Click on the three dots menu</strong> on the top right then click <strong>"Delete".</strong><br>
+        <li>
+            <p>Go to the <strong>"More" </strong> section of the app on the bottom left of the navigation bar.</p>
+        </li>
+        <li>
+            <p>Click <strong>"Cloudbeds" under the Integrations and Cloud accounts.</strong></p>
+        </li>
+        <li>
+            <p><strong>Click on the three dots menu</strong> on the top right, then click <strong>"Delete".</strong></p>
             <img src="../images/cb_dt_integration/more_screen.png" height="438" width="256">
             <img src="../images/cb_dt_integration/delete_cb.png" height="438" width="256">
         </li>
-        <li>Click <strong>"Confirm"</strong>
-
-        <li><strong>Your Cloudbeds account has now been disconnected successfully:</strong>
+        <li>
+            <p>Click <strong>"Confirm".</strong></p>
+        <li>
+            <p><strong>Your Cloudbeds account has now been disconnected successfully:</strong></p>
             <ul>
-                <li>All imported data from Cloudbeds has been deleted from your Devicethread account.</li>
-                <li>The initial property setup data created in the Devicethread app, before connecting to Cloudbeds,
-                    remains in
-                    the Devicedthreaqd app.<br>
-
+                <li>
+                    <p>All imported data from Cloudbeds has been deleted from your Devicethread account.</p>
+                </li>
+                <li>
+                    <p>The initial property setup data created in the Devicethread app, before connecting to Cloudbeds,
+                        remains in
+                        the Devicethread app.</p>
                 </li>
             </ul>
             <img src="../images/cb_dt_integration/delete_confirm.png" height="438" width="256">
             <img src="../images/cb_dt_integration/account_deleted_succesfully.png" height="438" width="256">
         </li>
     </ul>
+
     <h2>Related articles</h2>
 
     <h4>
