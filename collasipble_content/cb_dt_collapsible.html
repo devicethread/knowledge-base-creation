@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="https://help.dthreaddev.com/hubfs/Blue_DeviceThread02.png">
+    <link rel="stylesheet" href=https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap%22">
+    <link rel="stylesheet" type="text/css" href="../style_sheet.css">
+    <style>
+
+    </style>
+</head>
+
+<body >
+    <h4>Help Center&nbsp;&nbsp; >&nbsp;&nbsp; Cloudbeds Integration</h4>
+    <h1> Cloudbeds Integration</h1>
+    <button class="collapsible">How to connect Cloudbeds & Devicethread</button>
+    <div class="content">
+        <iframe id="iframe_content" src="../cloudbeds_integration_content/cb_dt_integration_guide.html"></iframe>
+
+    </div>
+    <br>
+
+    <button class="collapsible">What are the required steps that must be completed before connecting Cloudbeds &
+        Devicethread</button>
+    <div class="content">
+        <iframe id="iframe_content" src="../cloudbeds_integration_content/before_connecting_cb_dt.html"></iframe>
+    </div>
+    <br>
+
+    <footer>
+
+        <div class="content-container">
+            <div style="text-align: left;">
+                <span class="still-question">Still have questions?</span><br>
+                <span class="cant-find">Can’t find the answer you’re looking for? Please chat with our friendly
+                    team.</span>
+            </div>
+            <button class="button">
+                <a style="text-decoration: none;   color: white;" href="mailto:info@devicethread.com">Get in touch</a>
+            </button>
+        </div>
+    </footer>
+
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+
+</body>
+
+</html>
