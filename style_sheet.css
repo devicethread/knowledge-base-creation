@@ -98,10 +98,12 @@ strong {
     font-weight: bold;
     float: right;
     margin-left: 5px;
+    font-size: 10px;
 }
 
 .active:after {
     content: "\25b2";
+    font-size: 10px;
 }
 
 .content {
@@ -112,7 +114,7 @@ strong {
     background-color: white;
 }
 
-#iframe_content {
+#iframe-content {
     display: block;
     width: 100%;
     /* height needs to be check doubt */
