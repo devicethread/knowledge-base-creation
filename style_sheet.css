@@ -126,7 +126,7 @@ strong {
 
 header {
     background-color: #2268FF;
-    padding: 30px;
+
     text-align: center;
     font-size: 35px;
     color: white;
@@ -224,15 +224,15 @@ button {
 .dt-header {
     background-color: #FFFFFE;
     height: 30px;
+
     display: flex;
-    align-items: center;/
+    align-items: center;
 }
 
 .help-center {
-    margin-left: 10px;
+    text-align: center;
     font-size: 16px;
     color: #53686A;
-    vertical-align: bottom;
     font-weight: 400;
 
 }
