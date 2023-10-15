@@ -212,6 +212,7 @@ button {
     font-family: Roboto;
     font-size: 32px;
     font-weight: 500;
+    margin-top: 50px;
 }
 
 .have {
@@ -223,7 +224,7 @@ button {
 
 .dt-header {
     background-color: #FFFFFE;
-    height: 30px;
+    height: 40px;
 
     display: flex;
     align-items: center;
