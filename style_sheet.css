@@ -1,0 +1,278 @@
+h1 {
+    color: #2A3039;
+    font-family: Roboto;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 20px;
+    word-wrap: break-word
+}
+
+h2 {
+    color: #2A3039;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+    word-wrap: break-word
+}
+
+h3 {
+    color: #2A3039;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 20px;
+    word-wrap: break-word
+}
+
+h4 {
+    color: rgba(106, 121, 144, 1);
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    word-wrap: break-word
+}
+
+p {
+    color: #2A3039;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    word-wrap: break-word
+}
+
+a {
+    color: #2A3039;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    word-wrap: break-word
+}
+
+strong {
+    color: #2A3039;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    word-wrap: break-word
+}
+
+
+.pls-make {
+    border-left-color: rgb(153, 214, 255);
+    border-left-style: solid;
+    border-left-width: 5px;
+    clear: both;
+    padding: 20px 30px 10px;
+    width: 90%;
+    background: rgba(243, 245, 255, 1);
+}
+
+.collapsible {
+    background-color: #F3F5FF;
+    color: #2A3039;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: 0px;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    font-weight: 400;
+
+}
+
+.active,
+.collapsible:hover {
+    background-color: #F3F5FF;
+
+}
+
+.collapsible:after {
+    content: '\25bc';
+    color: grey;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+    font-size: 10px;
+}
+
+.active:after {
+    content: "\25b2";
+    font-size: 10px;
+}
+
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: white;
+}
+
+#iframe-content {
+    display: block;
+    width: 100%;
+    /* height needs to be check doubt */
+    height: 100vh;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border: 0;
+}
+
+
+header {
+    background-color: #2268FF;
+
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    height: 250px;
+
+
+}
+
+
+footer {
+    background-color: #F3F5FF;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+}
+
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+nav {
+    float: center;
+    width: 20%;
+    min-height: 100%;
+    background: #F3F5FF;
+    padding-left: 50px;
+    padding-top: 50px;
+    border-right: 1px solid #EBEBEB;
+}
+
+
+.content-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+}
+
+button {
+    font-weight: 600;
+    background-color: #2268FF;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    justify-content: space-between;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: Roboto;
+}
+
+.still-question {
+    color: #53686A;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    word-wrap: break-word;
+
+}
+
+.cant-find {
+    color: #53686A;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    word-wrap: break-word
+}
+
+.hi {
+    color: #FFFFFE;
+    font-family: Roboto;
+    font-size: 32px;
+    font-weight: 500;
+    margin-top: 50px;
+}
+
+.have {
+    color: #FFFFFE;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.dt-header {
+    background-color: #FFFFFE;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.help-center {
+    text-align: center;
+    font-size: 16px;
+    color: #53686A;
+    font-weight: 400;
+
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    padding: 7px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+
+nav a:hover {
+    background-color: #2268FF14;
+    color: #2A3039;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+html,
+body {
+    min-height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    float: left;
+    width: 20%;
+    background-color: white;
+    height: 800px;
+    padding: 20px;
+}
+
+article {
+    padding: 20px;
+    float: left;
+    height: 800px;
+    width: 80%;
+    background-color: white;
+    border-color: white;
+
+}
