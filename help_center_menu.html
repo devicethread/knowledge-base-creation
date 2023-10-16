@@ -38,45 +38,116 @@
         <h2 class="have">Have any questions? We're here to assist you.</h2>
 
     </header>
-    <div>
-        <!-- Create the side navigation bar -->
-        <nav>
-            <div>
-                <p> <a onclick="loadContent('./collasipble_content/initial_setup_collapsible.html')">Initial
-                        Setup</a>
-                </p>
-                <p> <a onclick="loadContent('./collasipble_content/cb_dt_collapsible.html')">Cloudbeds
-                        Integrations</a></p>
-                <p> <a onclick="loadContent('./collasipble_content/faq_collapsible.html')">Frequently
-                        Asked
-                        Questions</a> </p>
-                <p> <a onclick="loadContent('./collasipble_content/key_management_collapsible.html')">Key
-                        Management</a>
-                </p>
-                <p> <a onclick="loadContent('./collasipble_content/backup_collapsible.html')">Back
-                        Up</a> </p>
-            </div>
-        </nav>
 
-        <!-- Content area (iframe) -->
-        <article> <iframe id="content-iframe" style="width:100%;height: 100%; border-width:0"></iframe></article>
-    </div>
-    <script>
-        // JavaScript function to load content in the iframe
-        function loadContent(url) {
-            var iframe = document.getElementById('content-iframe');
-            iframe.src = url;
-            localStorage.setItem('iframeSrc', url);
-        }
 
-        // Check if there's a stored URL and load it on page load
-        window.onload = function () {
-            var storedURL = localStorage.getItem('iframeSrc');
-            if (storedURL) {
-                loadContent(storedURL);
+    <nav>
+        <p> <a data-section="initialSetup">Initial Setup</a></p>
+        <p> <a data-section="cloudbedsIntegration">Cloudbeds Integration</a></p>
+        <p> <a data-section="faq">Frequently Asked Questions</a></p>
+        <p> <a data-section="keyManagement">Key Management</a></p>
+        <p> <a data-section="backUp">Back up</a></p>
+    </nav>
+
+
+    <article>
+
+        <div id="initialSetup">
+
+
+            <iframe id="iframe-content" src="./collasipble_content/initial_setup_collapsible.html"></iframe>
+
+
+
+        </div>
+        <div id="cloudbedsIntegration">
+
+            <iframe id="iframe-content" src="./collasipble_content/cb_dt_collapsible.html"></iframe>
+
+
+
+        </div>
+        <div id="faq">
+
+            <iframe id="iframe-content" src="./collasipble_content/faq_collapsible.html"></iframe>
+
+
+
+        </div>
+        <div id="keyManagement">
+
+            <iframe id="iframe-content" src="./collasipble_content/key_management_collapsible.html"></iframe>
+
+
+        </div>
+        <div id="backUp">
+
+            <iframe id="iframe-content" src="./collasipble_content/backup_collapsible.html"></iframe>
+
+
+
+        </div>
+
+
+    </article>
+    <!-- stack overflow js code -->
+    <script>document.addEventListener('DOMContentLoaded', function () {
+            // Get all the navigation links
+            var navLinks = document.querySelectorAll('nav a');
+
+            // Function to hide all sections
+            function hideAllSections() {
+                var sections = document.querySelectorAll('article > div');
+                sections.forEach(function (section) {
+                    section.style.display = 'none';
+                });
             }
-        }
+
+            // Handle click events on the navigation links
+            navLinks.forEach(function (link) {
+                link.addEventListener('click', function (event) {
+                    event.preventDefault(); // Prevent the default link behavior
+
+                    var sectionId = link.getAttribute('data-section'); // Get the section ID from the data attribute
+
+                    hideAllSections();
+
+                    var selectedSection = document.getElementById(sectionId);
+                    if (selectedSection) {
+                        selectedSection.style.display = 'block';
+                        // Update the URL hash fragment to reflect the current section
+                        history.pushState(null, '', '#' + sectionId);
+                    }
+                });
+            });
+
+            // Function to switch content based on the anchor link in the URL
+            function switchContentFromAnchor() {
+                var sectionId = window.location.hash.substring(1); // Extract section ID from the URL's anchor
+
+                hideAllSections();
+
+                if (sectionId === "") {
+                    // If the hash is empty, show the default "Initial Setup" section
+                    sectionId = 'initialSetup';
+                }
+
+                var selectedSection = document.getElementById(sectionId);
+                if (selectedSection) {
+                    selectedSection.style.display = 'block';
+                }
+            }
+
+            // Add event listener to switch content when the page loads or when the URL changes
+            window.addEventListener('load', switchContentFromAnchor);
+            window.addEventListener('hashchange', switchContentFromAnchor);
+
+            // Trigger content switch on page load
+            switchContentFromAnchor();
+        }); 
     </script>
+
+    </script>
+
 </body>
 
 </html>
