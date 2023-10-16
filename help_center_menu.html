@@ -109,11 +109,11 @@
 
                     var sectionId = link.getAttribute('data-section'); // Get the section ID from the data attribute
 
-                    hideAllSections();
+                    hideAllSections();//Hide all sections
 
                     var selectedSection = document.getElementById(sectionId);
                     if (selectedSection) {
-                        selectedSection.style.display = 'block';
+                        selectedSection.style.display = 'block';//Display the selected section
                         // Update the URL hash fragment to reflect the current section
                         history.pushState(null, '', '#' + sectionId);
                     }
@@ -124,7 +124,7 @@
             function switchContentFromAnchor() {
                 var sectionId = window.location.hash.substring(1); // Extract section ID from the URL's anchor
 
-                hideAllSections();
+                hideAllSections();//Hide all sections
 
                 if (sectionId === "") {
                     // If the hash is empty, show the default "Initial Setup" section
@@ -133,7 +133,7 @@
 
                 var selectedSection = document.getElementById(sectionId);
                 if (selectedSection) {
-                    selectedSection.style.display = 'block';
+                    selectedSection.style.display = 'block';//Display the selected section
                 }
             }
 
@@ -146,7 +146,7 @@
         }); 
     </script>
 
-    </script>
+   
 
 </body>
 
