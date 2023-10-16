@@ -157,25 +157,21 @@ nav {
     float: center;
     width: 20%;
     min-height: 100%;
-
     background: #F3F5FF;
     padding-left: 50px;
     padding-top: 50px;
-
     border-right: 1px solid #EBEBEB;
 }
 
 
 .content-container {
     display: flex;
-
     align-items: flex-start;
     justify-content: space-between;
 
 }
 
 button {
-
     font-weight: 600;
     background-color: #2268FF;
     color: white;
@@ -227,7 +223,6 @@ button {
 .dt-header {
     background-color: #FFFFFE;
     height: 40px;
-
     display: flex;
     align-items: center;
 }
@@ -264,17 +259,12 @@ body {
     margin: 0;
 }
 
-
-
-
 nav {
     float: left;
     width: 20%;
     background-color: white;
     height: 800px;
     padding: 20px;
-
-
 }
 
 article {
