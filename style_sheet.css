@@ -3,7 +3,6 @@ h1 {
     font-family: Roboto;
     font-size: 32px;
     font-weight: 600;
-
     word-wrap: break-word
 }
 
@@ -12,7 +11,6 @@ h2 {
     font-family: Roboto;
     font-size: 16px;
     font-weight: bold;
-
     word-wrap: break-word
 }
 
@@ -21,7 +19,6 @@ h3 {
     font-family: Roboto;
     font-size: 16px;
     font-weight: 900;
-
     word-wrap: break-word
 }
 
@@ -30,7 +27,6 @@ h4 {
     font-family: Roboto;
     font-size: 14px;
     font-weight: 500;
-
     word-wrap: break-word
 }
 
@@ -128,7 +124,6 @@ strong {
 
 header {
     background-color: #2268FF;
-
     text-align: center;
     font-size: 35px;
     color: white;
